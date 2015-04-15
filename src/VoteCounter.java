@@ -1,3 +1,64 @@
+/*
+ To combat election fraud, your city is instituting a new voting procedure. 
+ The ballot has a letter associated with every selection a voter may make. 
+ A sample ballot is shown.
+
+1. VOTE FOR MAYOR
+A. Pincher, Penny
+B. Dover, Skip
+C. Perman, Sue
+
+2. PROPOSITION 17
+D. YES
+E. NO
+
+3. MEASURE 1
+F. YES
+G. NO
+
+4. MEASURE 2
+H. YES
+I. NO
+ 
+After submitting their ballot, every voter receives a receipt that has a unique 
+ID number and a record of their voting selections. For example, a voter that submits 
+a ballot for Sue Perman, Yes on Proposition 17, No on Measure 1, and Yes on 
+Measure 2 might receive a receipt with
+
+ID 4925 : CDGH
+
+The next day the city posts all votes on their web page sorted by ID number. 
+This allows a voter to confirm their submission and allows anyone to count 
+the vote totals for themselves. A sample list for the sample ballot is shown.
+
+ID VOTES
+4925 CDGH
+4926 AEGH
+4927 CDGI
+4928 BEGI
+4929 ADFH
+
+Write a program that reads the posted voting list from a CSV file and 
+outputs the percent of votes cast for each ballot item. You may assume 
+that the file does not have any header lines. The first line will contain 
+a voter ID and a string representing votes. Define a class named Voter 
+that stores an individual’s voting record. The class should have a 
+constructor that takes as input a string of votes (e.g., “CDGH”), a voter 
+ID, and accessor function(s) that return the person’s ID and vote for 
+a specific question.
+
+Store each Voter instance in an array or vector. Your program should 
+iterate over the array to compute and output the percent of votes cast 
+for each candidate, proposition, and measure. The output should be like 
+this:
+
+Votes for Item 1: 32
+Votes for Item 2: 15
+Votes for Item 3: 20
+Votes for Item 4: 14
+
+*/
+
 import java.io.*;
 import java.util.*;
 
